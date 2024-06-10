@@ -1,0 +1,238 @@
+/* Navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Appliquer la police Inter à tous les éléments textuels */
+body,
+button,
+input,
+textarea {
+  font-weight: 400; /* Ajusté pour correspondre aux poids normaux, 600 était trop épais */
+}
+
+.navbar-container {
+  background-color: #ffff;
+  min-height: 100vh;
+  width: 275px; /* Votre largeur ajustée */
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex; /* Active Flexbox */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  flex-direction: column; /* Organise les enfants en colonne */
+  position: relative;
+}
+
+.navbar-secondary {
+  min-height: 100vh;
+  width: 250px; /* Largeur spécifique pour navbar-secondary */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-header {
+  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: row; /* Modifié pour aligner les éléments horizontalement */
+  align-items: center;
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.down-arrow {
+  display: inline-block;
+  margin-left: 10px; /* Ajustez l'espace entre le prénom et la flèche */
+  vertical-align: top; /* Alignement vertical de la flèche avec le haut du texte */
+}
+
+.name-and-logo {
+  display: flex;
+  align-items: center; /* Ceci assure que les enfants sont centrés verticalement */
+  font-weight: 600;
+  /* augmenter la taille de la box */
+  padding: 0.5rem;
+  position: relative;
+}
+
+.name-and-logo:hover {
+  background-color: #7e87cc1a;
+  border-radius: 15px; /* Bords arrondis pour l'élément actif */
+  /* Ajoutez une transition pour un changement en douceur */
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Changez le curseur pour indiquer que l'élément est cliquable */
+}
+
+.logo {
+  /* Ajustez la taille du logo si nécessaire pour aider au centrage */
+  max-height: 40px;
+  max-width: 100%;
+  width: auto;
+  /* Aucun margin-bottom n'est nécessaire ici si vous voulez que le logo soit centré */
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ceci centre verticalement le texte par rapport au logo */
+  margin-left: 1rem; /* Ajustez selon l'espacement désiré entre le logo et le texte */
+}
+
+.trial-text {
+  color: #686daac0;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.upgrade-button {
+  background-color: #002190; /* Blue color */
+  border: none;
+  padding: 12px 15px; /* Increased padding for larger button */
+  color: white;
+  margin-top: 0.5rem; /* Margin to separate from the content above */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  width: calc(100% - 2rem); /* Adjust width to account for padding */
+  transition: background-color 0.5s; /* Smooth transition for background color */
+  font-size: 1rem;
+  display: block; /* To ensure it doesn't stay inline */
+  margin-left: auto;
+  margin-right: auto; /* Center the button */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-weight: 700;
+}
+
+.upgrade-button:hover {
+  background-color: #3556c2; /* Darker blue on hover */
+}
+
+/* Navbar.css */
+/* ... (autres styles globaux) ... */
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem; /* Réduit le padding horizontal */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: medium;
+  margin: -0.5rem;
+  margin-left: 1.5rem; /* Espace du côté gauche */
+  margin-right: 1.5rem; /* Espace du côté droit */
+  margin-top: 1.2rem;
+  border-radius: 10px; /* Bords arrondis */
+  transition: all 0.3s ease; /* Transition douce pour tous les changements */
+  color: rgba(114, 114, 114, 0.5);
+}
+
+.navbar-item:hover {
+  color: #002190;
+  background-color: #7e87cc1a;
+}
+
+.navbar-item.active {
+  background-color: #7e87cc1a;
+}
+
+.navbar-item.active {
+  background-color: #7e87cc1a;
+  color: #002190;
+  border-radius: 15px; /* Bords encore plus arrondis pour l'élément actif */
+}
+/* ... (autres styles) ... */
+
+.navbar-icon {
+  margin-right: 0.2rem; /* Reduced space between the icon and the text */
+  height: 35px; /* Adjust height as needed */
+  width: auto;
+  opacity: 1; /* Full opacity by default */
+}
+
+/* Navbar Icon which is not overed and not selected: 0.5 opacity */
+.navbar-item:not(:hover):not(.active) .navbar-icon {
+  opacity: 0.5;
+}
+
+.navbar-separator {
+  height: 1px; /* Hauteur de la ligne */
+  background-color: rgb(204, 204, 204, 0.2); /* Couleur de la ligne */
+  margin: 30px 15px 0px 15px; /* Marges verticales pour espacer et marges horizontales pour aligner avec les éléments de la navbar */
+}
+
+.popup-container {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: calc(100% - 20px);
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  border: 1px solid #ddd;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: visibility 0s, opacity 0.3s ease-out, transform 0.3s ease-out;
+  overflow: hidden;
+}
+
+.popup-container.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  animation: popupAnimation 0.5s ease forwards;
+}
+
+@keyframes popupAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popup-item:hover {
+  background-color: #7e87cc1a;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.popup-item:last-child {
+  border-bottom: none;
+}
+
+.popup-item img {
+  /* Si vous utilisez des icônes */
+  margin-right: 10px;
+  width: 24px;
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-color: #eff3fb; /* Couleur de fond de la bannière */
+  padding: 20px; /* Espacement intérieur de la bannière */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner-subtitle {
+  font-size: 1rem;
+  color: #707ba0; /* Couleur du sous-titre */
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.banner-button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Container for the search section and categories */
+.container {
+  padding: 20px;
+  display: flex;
+  gap: 20px; /* Adjust the space between search section and categories */
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category {
+  padding: 0.5rem;
+  background-color: #eff3fb;
+  border-radius: 5px;
+}
+
