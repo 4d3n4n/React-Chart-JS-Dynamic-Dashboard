@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Refonte du Frontend d'un SaaS - Version 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Ce projet est une refonte de la version 1 du frontend d'un SaaS, utilisant la bibliothèque ChartJS pour créer un tableau de bord dynamique. Le tableau de bord permet de visualiser et de consulter de manière visuelle des données en fonction de la date choisie. Chaque point du graphique peut être consulté pour obtenir un aperçu détaillé des données à un moment donné.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Tableau de bord dynamique** : Visualisation des données en fonction d'un sujet et la date sélectionnée.
+- **Utilisation de ChartJS** : Graphiques interactifs et dynamiques.
+- **Affichage des données détaillées** : En cliquant sur un point du graphique, les données de ce moment apparaissent dans une sidebar pour un aperçu détaillé.
+- **Sélection de la tranche horaire** : Affichage des données sur une période de 24 heures. Par exemple, en affichant une tranche de 24 heures, le graphique affiche les données sur 24 heures. En cliquant sur le point de 14h00, les données de cette heure apparaissent de manière détaillée.
 
-### `npm test`
+## Prérequis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- npm (ou yarn)
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clonez le dépôt :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/votre-utilisateur/votre-repo.git
+   cd votre-repo
+   ```
 
-### `npm run eject`
+2. Installez les dépendances :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
+   ou
+   ```bash
+   yarn install
+   ```
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Utilisation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Démarrez l'application :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
+   ou
+   ```bash
+   yarn start
+   ```
 
-## Learn More
+2. Ouvrez votre navigateur et allez à http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Modification des données de test
+Vous pouvez modifier les données de test depuis le fichier `dataExemple.json`.
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Utilisation du calendrier dynamique
+Il faut importer ou installer aussi le composant suivant pour utiliser le calendrier dynamique :
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install react-datepicker
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Puis, dans votre code, importez-le avec :
 
-### Making a Progressive Web App
+   ```javascript
+   import DatePicker from 'react-datepicker';
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+## Technologies utilisées
+- **React** : Bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **ChartJS** : Bibliothèque JavaScript pour créer des graphiques interactifs et dynamiques.
+- **React Router** : Bibliothèque pour gérer la navigation dans l'application.
+- **React DatePicker** : Composant pour sélectionner des dates de manière interactive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Démonstration
+Voici un aperçu de l'application :
 
-### Deployment
+https://github.com/4d3n4n/React-Chart-JS-Dynamic-Dashboard/assets/140979426/4e44f386-aa2b-4257-808e-067cec7d0ef7
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## Contribution
+Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Forkez le projet.
+2. Créez une branche pour votre fonctionnalité `git checkout -b feature/AmazingFeature`.
+3. Commitez vos modifications `git commit -m 'Add some AmazingFeature'`.
+4. Poussez la branche `git push origin feature/AmazingFeature`.
+5. Ouvrez une Pull Request.
+
+Merci d'utiliser ce projet ! 😊
