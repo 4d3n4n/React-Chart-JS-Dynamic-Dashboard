@@ -87,7 +87,8 @@ Puis, dans votre code, importez-le avec :
 ## Démonstration
 Voici un aperçu de l'application :
 
-https://github.com/4d3n4n/React-Chart-JS-Dynamic-Dashboard/assets/140979426/4e44f386-aa2b-4257-808e-067cec7d0ef7
+https://github.com/4d3n4n/React-Chart-JS-Dynamic-Dashboard/assets/140979426/728f191a-287b-4e13-a615-2c7459916c9b
+
 
 <br>
 
