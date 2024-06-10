@@ -27,7 +27,7 @@ Ce projet est une refonte de la version 1 du frontend d'un SaaS, utilisant la bi
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
+   git clone https://github.com/4d3n4n/React-Chart-JS-Dynamic-Dashboard.git
    cd votre-repo
    ```
 
