@@ -84,6 +84,8 @@ Puis, dans votre code, importez-le avec :
 - **React Router** : Bibliothèque pour gérer la navigation dans l'application.
 - **React DatePicker** : Composant pour sélectionner des dates de manière interactive.
 
+<br>
+
 ## Démonstration
 Voici un aperçu de l'application :
 
